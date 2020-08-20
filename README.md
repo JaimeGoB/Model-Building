@@ -9,9 +9,9 @@ It is a common belief that 50% percent of all marriages will end getting a divor
 6.	Birth: births per 1000 women age 15-44
 7.	Military: military personnel per 1000 population
 
-# # This report will include a rigorous analysis on determining the best model to predict divorce rates from the divusa dataset. 
+# This report will include a rigorous analysis on determining the best model to predict divorce rates from the divusa dataset. 
 
-A full model will consist of the following equation. 
+**A full model will consist of the following equation.
 ![alt-text](https://github.com/JaimeGoB/Model-Building/blob/master/Equations/fullModel.png)
 
 
@@ -20,14 +20,15 @@ In order to see if the model needs to undergo a transformation of variables y or
 ![alt-text](https://github.com/JaimeGoB/Model-Building/blob/master/Equations/transformations.png)
 
 
-Since lambada = -1 is still within the 95% confidence interval of Box-Cox we will use this transformation because it is easier to interpret than a lambada = -.92.  So, after performing a 1/y transformation the new fitted model becomes:
+Since lambada = -1 is still within the 95% confidence interval of Box-Cox we will use this transformation because it is easier to interpret than a lambada = -.92. **So, after performing a 1/y transformation the new fitted model becomes:
 
 ![alt-text](https://github.com/JaimeGoB/Model-Building/blob/master/Equations/transformedModel.png)
 
 
 Using an exhaustive search, we will get the most optimal subsets of regression coefficients.
 
-All four different tests from exhaustive search show that dropping the military coefficient will yield a better model. So, we will drop this variable thus, the final fitted model becomes:
+All four different tests from exhaustive search show that dropping the military coefficient will yield a better model. So, we will drop this variable thus; 
+**The final fitted model becomes:
 
 ![alt-text](https://github.com/JaimeGoB/Model-Building/blob/master/Equations/finalModel.png)
 
